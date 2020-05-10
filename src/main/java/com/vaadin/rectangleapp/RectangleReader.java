@@ -45,6 +45,5 @@ public class RectangleReader {
         rectangleRepo.save(rectangle2);
         rectangleRepo.save(rectangle3);
         rectangleRepo.save(rectangle4);
-        System.out.println("************************^^^^^^^^^^^^^^^");
     }
 }
