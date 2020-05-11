@@ -1,11 +1,14 @@
 package com.vaadin.rectangleapp;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
 @Route
+@CssImport("/css/style.css")
 public class RectangleGui extends VerticalLayout {
 
     private final RectangleRepo rectangleRepo;
