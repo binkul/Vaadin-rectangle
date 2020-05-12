@@ -8,7 +8,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
 @Route
-@CssImport("/css/style.css")
+@StyleSheet("frontend://styles/style.css")
 public class RectangleGui extends VerticalLayout {
 
     private final RectangleRepo rectangleRepo;
@@ -21,6 +21,7 @@ public class RectangleGui extends VerticalLayout {
         textFieldHeight = new TextField("Podaj wysokość");
         textFieldWidth = new TextField("Podaj szerokość");
         button = new Button("Dodaj!");
+        button.addClassName("jacek");
         button.addClickListener(clickEvent -> addRectangle());
 
         add(textFieldHeight);
